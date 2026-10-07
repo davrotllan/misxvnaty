@@ -264,7 +264,7 @@ h1, h2 {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to top right,
+    linear-gradient(to top,
       color-mix(in srgb, var(--rose-deep) 85%, transparent) 0%,
       color-mix(in srgb, var(--accent) 65%, transparent) 25%,
       color-mix(in srgb, var(--rose-soft) 30%, transparent) 40%,
@@ -317,7 +317,7 @@ h1, h2 {
   margin: 0 0 clamp(8px, 1.5vw, 18px);
   font-family: var(--font-sans);
   font-weight: 300;
-  font-size: clamp(24px, 1.2vw, 16px);
+  font-size: clamp(18px, 1.2vw, 32px);
   line-height: 1.6;
   max-width: 27ch;
   color: var(--paper);
@@ -327,7 +327,7 @@ h1, h2 {
 .hero__name {
   font-family: var(--font-serif);
   color: var(--paper);
-  font-size: clamp(52px, 13.5vw, 215px);
+  font-size: clamp(20px, 13vw, 115px);
   line-height: 1.2;
   letter-spacing: -.02em;
   text-wrap: balance;
