@@ -265,9 +265,9 @@ h1, h2 {
   inset: 0;
   background:
     linear-gradient(to top,
-      color-mix(in srgb, var(--rose-deep) 85%, transparent) 0%,
-      color-mix(in srgb, var(--accent) 65%, transparent) 25%,
-      color-mix(in srgb, var(--rose-soft) 30%, transparent) 40%,
+      var(--paper) 0%,
+      color-mix(in srgb, var(--paper) 65%, transparent) 25%,
+      color-mix(in srgb, var(--paper) 30%, transparent) 40%,
       transparent 80%),
     linear-gradient(to bottom,
       rgba(37, 33, 36, .42) 0%,
@@ -320,13 +320,13 @@ h1, h2 {
   font-size: clamp(18px, 1.2vw, 32px);
   line-height: 1.6;
   max-width: 27ch;
-  color: var(--paper);
+  color: var(--ink);
   opacity: .92;
 }
 
 .hero__name {
   font-family: var(--font-serif);
-  color: var(--paper);
+  color: var(--ink);
   font-size: clamp(20px, 13vw, 115px);
   line-height: 1.2;
   letter-spacing: -.02em;
@@ -349,7 +349,7 @@ h1, h2 {
   display: flex;
   align-items: baseline;
   gap: clamp(10px, 1.4vw, 20px);
-  color: var(--paper);
+  color: var(--ink);
   font-weight: 300;
   font-size: clamp(22px, 3.4vw, 46px);
   letter-spacing: .06em;
@@ -365,7 +365,7 @@ h1, h2 {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--paper);
+  color: var(--ink);
   font-size: 10px;
   letter-spacing: .28em;
   text-transform: uppercase;
@@ -786,7 +786,7 @@ h1, h2 {
   max-width: var(--wrap);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: clamp(28px, 4vw, 64px);
   align-items: center;
   border: 1px solid var(--line-rose);
@@ -800,14 +800,29 @@ h1, h2 {
   font-size: clamp(24px, 3.2vw, 44px);
   line-height: 1.14;
   letter-spacing: -.01em;
+  margin-bottom: clamp(14px, 1.8vw, 20px);
 }
 
 .pool__text {
   font-size: clamp(15px, 1.3vw, 18px);
   line-height: 1.75;
   color: var(--ink-soft);
-  max-width: 40ch;
+  max-width: 44ch;
   text-wrap: pretty;
+}
+
+.pool__figure {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.pool__img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
 }
 
 /* 12. Regalos ---------------------------------------------- */
